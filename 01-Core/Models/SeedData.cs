@@ -18,7 +18,7 @@ namespace _01_Core.Models
                 ProductDbContext context = serviceScope.ServiceProvider.GetService<ProductDbContext>();
 
                 context.Database.Migrate();
-                if (context.Products.Any())
+                if (!context.Products.Any())
                 {
                     context.Products.AddRange(
                         new Product() { ProductName = "Chai", Description = "Delicious", Price = 4 },

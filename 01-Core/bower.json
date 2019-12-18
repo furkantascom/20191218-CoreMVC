@@ -1,0 +1,10 @@
+{
+  "name": "default",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "v4.4.1",
+    "jQuery": "3.4.1",
+    "jquery-validation": "1.19.1",
+    "jquery-validation-unobtrusive": "v3.2.11"
+  }
+}

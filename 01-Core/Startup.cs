@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _01_Core.Models;
 using _01_Core.Models.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,6 +35,8 @@ namespace _01_Core
 
             app.UseMvcWithDefaultRoute();
             app.UseStatusCodePages();
+            app.UseStaticFiles();
+            SeedData.Seed(app);
         }
     }
 }
